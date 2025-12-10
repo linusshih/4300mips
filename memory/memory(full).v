@@ -111,7 +111,7 @@ module mem_wb(
     output reg [4:0]   WriteReg_out    
 )
 
-    always @(posedge clk) begi
+    always @(posedge clk) begin
         memtoreg      <= WBControl[1]; 
         regwrite      <= WBControl[0]; 
         ReadData_out  <= ReadData_in;
